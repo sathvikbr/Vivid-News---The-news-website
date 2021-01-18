@@ -27,7 +27,7 @@ app.get("/", function(req, res){
   let pubURL = [];
   const lang = "en";
   const country = "in";
-  const key = "81f87ab5588216686ae5a927fef40e3c#";
+  const key = "XXXXXXXXXXX";    //replace the Xs with your GNews API key
   const url = "https://gnews.io/api/v4/top-headlines?lang=" + lang + "&country=" + country + "&max=10&token=" + key;
   request(url, {json:true}, (err, resp, body) =>{
     if(err){
