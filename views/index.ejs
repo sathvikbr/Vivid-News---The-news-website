@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>VividNews - The News Treasury</title>
+  <link href="css/media_query.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+  <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css" />
+  <link href="css/style_1.css" rel="stylesheet" type="text/css" />
+  <script src="js/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid fh5co_header_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 fh5co_mediya_center"><a href="#" class="color_fff fh5co_mediya_setting"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;<%= today %></a>
+          <div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">Trending Now
+            
+          </a>
+            <div class="fh5co_treding_position_absolute"></div>
+          </div>
+          <a href=<%= url[9] %> class="color_fff fh5co_mediya_setting"><%= title[9] %>></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 fh5co_padding_menu">
+          <img src="images/logo.png" alt="img" class="fh5co_logo_width" />
+        </div>
+        <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
+          <div class="text-center d-inline-block">
+            <a class="fh5co_display_table">
+              <div class="fh5co_verticle_middle"><i class="fa fa-search"></i></div>
+            </a>
+          </div>
+
+          <div class="text-center d-inline-block">
+            <a href="" target="_blank" class="fh5co_display_table">
+              <div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div>
+            </a>
+          </div>
+          <div class="text-center d-inline-block">
+            <a href="" target="_blank" class="fh5co_display_table">
+              <div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div>
+            </a>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+    <div class="container padding_786">
+      <nav class="navbar navbar-toggleable-md navbar-light ">
+        <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="fa fa-bars"></span></button>
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="img" class="mobile_logo_width" /></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#tags">Tags <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#footer">About Us<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="#footer">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <div class="container-fluid paddding mb-5">
+    <div class="row mx-0">
+      <% for(i=0;i<1; i++){ %>
+      <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
+        <div class="fh5co_suceefh5co_height"><img src=<%=img[i]%> alt="img" />
+          <div class="fh5co_suceefh5co_height_position_absolute"></div>
+          <div class="fh5co_suceefh5co_height_position_absolute_font">
+            <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<%= date[i] %>
+              </a></div>
+            <div class=""><a href=<%= url[i] %> class="fh5co_good_font"> <%= title[i] %> </a></div>
+            <div class="fh5co_latest_trading_date_and_name_color"> <a href=<%= puburl[i] %>> Source: <%= pub[i] %></a></div>
+          </div>
+        </div>
+      </div>
+      <% }%>
+      <div class="col-md-6">
+        <div class="row">
+          <% for(i=1;i<5; i++){ %>
+          <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+            <div class="fh5co_suceefh5co_height_2"><img src=<%=img[i] %> alt="img" />
+              <div class="fh5co_suceefh5co_height_position_absolute"></div>
+              <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<%= date[i] %> </a></div>
+                <div class=""><a href=<%= url[i] %> class="fh5co_good_font_2"><%= title[i] %> </a></div>
+                <div class="fh5co_latest_trading_date_and_name_color"> <a href=<%= puburl[i] %>> Source: <%= pub[i] %></a></div>
+
+              </div>
+            </div>
+          </div>
+          <% }%>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <div class="container-fluid pb-4 pt-4 paddding">
+    <div class="container paddding">
+      <div class="row mx-0">
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+          <div>
+            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+          </div>
+          <% for(i=5;i<9; i++){ %>
+          <div class="row pb-4">
+            <div class="col-md-5">
+              <div class="fh5co_hover_news_img">
+                <div class="fh5co_news_img"><img src=<%=img[i]%> alt="" /></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="col-md-7 animate-box">
+              <a href=<%= url[i] %> class="fh5co_magna py-2"> <%= title[i] %> </a> <a href="single.html" class="fh5co_mini_time py-3"> <%= date[i] %> </a>
+              <div class="fh5co_consectetur"> <%= desc[i] %>
+                <div class="fh5co_latest_trading_date_and_name_color"> <a href=<%= puburl[i] %>> Source: <%= pub[i] %></a></div>
+
+              </div>
+            </div>
+          </div>
+          <% } %>
+          <br>
+          <br>
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInRight" id="tags">
+          <div>
+            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Tags</div>
+          </div>
+          <div class="clearfix" >
+          <form action="/tags" method="POST">
+          <div class="fh5co_tags_all" >
+            <button type="submit" name="tag" value="business" class="fh5co_tagg">Business</button>
+            <button type="submit" name="tag" value="technology" class="fh5co_tagg">Technology</button>
+            <button type="submit" name="tag" value="sports" class="fh5co_tagg">Sport</button>
+            <button type="submit" name="tag" value="world" class="fh5co_tagg">World</button>
+            <button type="submit" name="tag" value="nation" class="fh5co_tagg">Nation</button>
+            <button type="submit" name="tag" value="science" class="fh5co_tagg">Science</button>
+            <button type="submit" name="tag" value="health" class="fh5co_tagg">Health</button>
+            <button type="submit" name="tag" value="entertainment" class="fh5co_tagg">Entertainment</button>
+          </div>
+          </form>
+        </div>
+          <br><br><br>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container-fluid fh5co_footer_bg pb-3" id="footer">
+    <div class="container animate-box">
+      <div class="row">
+        <div class="col-12 spdp_right py-5"><img src="images/white_logo.png" alt="img" class="footer_logo" /></div>
+        <div class="clearfix"></div>
+        <div class="col-4 col-md-4 col-lg-4">
+          <div class="footer_main_title py-3"> About Us</div>
+          <div class="footer_sub_about pb-3"> We at VIVID news want to give a news reader a one stop destination of collection of news from
+             various websites, interseting topics and much more on our website. This provides the reader with a one line read of the headline 
+             and a small gist of the news on this site. And by clicking on the news item, you will be redirected to the original article of the 
+             source website. <br><br>
+          </div>
+          <div class="footer_main_title py-3"> Contact Us </div>
+          <div class="footer_mediya_icon">
+            <div class="text-center d-inline-block"><a class="fh5co_display_table_footer">
+                <div class="fh5co_verticle_middle"><i class="fa fa-envelope"></i></div>
+              </a></div>
+            <div class="text-center d-inline-block"><a class="fh5co_display_table_footer">
+                <div class="fh5co_verticle_middle"><i class="fa fa-phone"></i></div>
+              </a></div>
+            <div class="text-center d-inline-block"><a class="fh5co_display_table_footer">
+                <div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div>
+              </a></div>
+            <div class="text-center d-inline-block"><a class="fh5co_display_table_footer">
+                <div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-lg-4">
+          <form action="/tags" method="POST">
+          <div class="footer_main_title py-3"> Category</div>
+          <ul class="footer_menu">
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="business" style="background-color: #222; color: white; border: none" >Business</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="technology" style="background-color: #222; color: white; border: none" >Technology</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="sports" style="background-color: #222; color: white; border: none" >Sports</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="world" style="background-color: #222; color: white; border: none" >World</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="nation" style="background-color: #222; color: white; border: none" >Nation</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="science" style="background-color: #222; color: white; border: none" >Science</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="health" style="background-color: #222; color: white; border: none" >Health</button></a></li>
+            <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<button type="submit" name="tag" value="entertainment" style="background-color: #222; color: white; border: none" >Entertainment</button></a></li>
+          </ul>
+        </form>
+        </div>
+        <div class="col-8 col-md-4 col-lg-4 position_footer_relative">
+          <div class="footer_main_title py-3"> Most Viewed Posts</div>
+          <a href="<%= url[0] %>" class="footer_post pb-4"> <%= title[0] %> </a>
+          <p>Source: <%= pub[0] %></p>
+          <a href="<%= url[1] %>" class="footer_post pb-4"> <%= title[1] %> </a>
+          <p>Source: <%= pub[1] %></p>
+          <a href="<%= url[2] %>" class="footer_post pb-4"> <%= title[2] %> </a>
+          <p>Source: <%= pub[2] %></p>
+          <div class="footer_position_absolute"><img src="images/footer_sub_tipik.png" alt="img" class="width_footer_sub_img" /></div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="container-fluid fh5co_footer_right_reserved">
+    <div class="container">
+      <div class="row  ">
+        <div class="col-12 col-md-6 py-4 Reserved"> © Copyright Reserved at ViviD Co. <a href="https://freehtml5.co" title="Free HTML5 Bootstrap templates"></a></div>
+        <div class="col-12 col-md-6 spdp_right py-4">
+          <a href="#" class="footer_last_part_menu">Home</a>
+          <a href="#footer" class="footer_last_part_menu">About</a>
+          <a href="#footer" id="footer" class="footer_last_part_menu">Contact</a>
+          <a href="#" class="footer_last_part_menu">Latest News</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
