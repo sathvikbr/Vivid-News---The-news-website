@@ -10,8 +10,8 @@ runtime environment- node.js
 Requirements-
 
 windows 7 and above
-HyperTerminal (or similar)
-Signup to GNews for API key
+Hyper Terminal (or similar)
+GNews for API key
 npm packages- express, ejs, request, body-parser
 
 Installation and run-
